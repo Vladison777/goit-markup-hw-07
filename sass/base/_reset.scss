@@ -1,0 +1,71 @@
+:root {
+    --main-text: #757575;
+    --accent-color: #2196F3;
+    --logo-black-color: #000000;
+    --secondary-text: #212121;
+    --main-section: #2F303A;
+    --main-white: #FFFFFF;
+    --section-team: #F5F4FA;
+    --portfolio-header: #ECECEC;
+    --icon-gray-fill: #AFB1B8;
+}
+
+body {
+    background-color: var(--main-white);
+    color: var(--main-text);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0%;
+}
+
+ol,
+ul {
+    margin: 0%;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
