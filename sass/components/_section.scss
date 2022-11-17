@@ -28,26 +28,6 @@
     margin-right: auto;
 }
 
-.button {
-    color: var(--main-white);
-    background-color: var(--accent-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    padding: 10px 32px;
-    display: inline-block;
-    min-width: 216;
-    border: 1px solid transparent;
-    display: flex;
-    margin: auto;
-}
 
 
 .about {
@@ -73,19 +53,6 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--main-white);
-}
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
 }
 
 .description {
@@ -196,21 +163,20 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: var(--accent-color);
+        color: var(--main-white);
+    }
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .icon-networks-icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
-}
-
-.icon-networks:hover {
-    background-color: var(--accent-color);
-    color: var(--main-white);
-}
-
-.icon-networks:focus {
-    background-color: var(--accent-color);
 }
 
 .icon-networks:focus .icon-networks-icon {
@@ -248,20 +214,23 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .regular-customers-icon {
     fill: currentColor;
 }
 
-.regular-customers:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
 
-.regular-customers:focus {
-    border-color: var(--accent-color);
-}
+
+
 
 .regular-customers:focus .regular-customers-icon {
     fill: var(--accent-color);

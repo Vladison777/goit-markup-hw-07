@@ -26,20 +26,7 @@
     border-bottom: 1px solid var(--portfolio-header);
 }
 
-.logo {
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--logo-black-color);
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-}
 
-.logo>span:first-child {
-    color: var(--accent-color);
-}
 
 .nav-link {
     position: relative;
@@ -52,12 +39,13 @@
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 32px;
+    &:hover,
+    &:focus {
+         color: var(--accent-color);
+    }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--accent-color);
-}
+
 
 .current {
     color: var(--accent-color);
@@ -87,12 +75,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-link:hover,
-.contact-contact:focus {
-    color: var(--accent-color);
-}
+
 
 .contact-icon {
     width: 16px;

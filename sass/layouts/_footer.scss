@@ -11,28 +11,10 @@
     justify-content: space-between;
 }
 
-.logo-footer>span:first-child {
-    color: var(--accent-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
 
-.logo-footer>span:last-child {
-    color: var(--main-white);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
 
-.logo-footer {
-    text-decoration: none;
-    margin-bottom: 20px;
-}
+
+
 
 .link-footer {
     color: var(--main-white);
@@ -58,12 +40,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+            color: var(--accent-color);
+        }
 
-}
-
-.footer-contact:hover,
-.footer-contact:focus {
-    color: var(--accent-color);
 }
 
 .join {
@@ -102,20 +83,20 @@
     border-radius: 50%;
     color: var(--main-white);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            background-color: var(--accent-color);
+        }
+    &:focus {
+            background-color: var(--accent-color);
+        }
+
 }
 
 .icon-join {
     fill: currentColor;
 }
 
-.regular-customers-footer:hover {
-    background-color: var(--accent-color);
-}
-
 .regular-customers-footer:hover .icon-join {
     fill: var(--main-white);
 }
 
-.regular-customers-footer:focus {
-    background-color: var(--accent-color);
-}
