@@ -11,41 +11,13 @@
     justify-content: space-between;
 }
 
-
-
-
-
-
 .link-footer {
     color: var(--main-white);
 }
 
-.google-contact {
-    color: var(--main-white);
-    text-decoration: none;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
 
-.contact {
-    margin-bottom: 9px;
-}
 
-.footer-contact {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    padding-bottom: 9px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus{
-            color: var(--accent-color);
-        }
 
-}
 
 .join {
     letter-spacing: 0.03em;
